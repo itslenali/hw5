@@ -3,6 +3,12 @@
 
 <a href="home.html"><button id="btnhome"></button> 
 
+<div class="container">
+    <div class="tooltip black_button">
+        <div class="tooltiptext overlay"><a href="#"> BLACKBERRY</a></div>
+    </div>
+</div>
+
 </body>
 </html>
 
@@ -13,6 +19,29 @@ body {
     background-size:     contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center;              /* optional, center the image */
+}
+
+.tooltip {
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 #btnhome {  
@@ -26,5 +55,32 @@ body {
     font-size:14px;
     font-weight:700;
 }
+
+.black_button { 
+    margin-left: 70%;
+    margin-top: 50%;
+    width: 500px;
+    height: 45px;   
+    background: transparent;
+    border: none;
+    color: red;   
+    font-size:14px;
+    font-weight:700;
+}
+
+.overlay {
+  top: 50%;
+  left: 53.5%;
+  width: 62px;
+  height: 55px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
 
 </style>
