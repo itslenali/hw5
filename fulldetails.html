@@ -3,7 +3,9 @@
 
 <a href="home.html">Home</a> 
 
-<div class="black-circle"></div>
+<div class="cart"></div>
+
+<div class="black-circle" onclick="showColor()"></div>
   <p class="color-text"></p>
 
 <div class="red-circle"></div>
@@ -12,8 +14,35 @@
 <div class="orange-circle"></div>
   <p class="color-text"></p>
 
-  <div class="blue-circle"></div>
+<div class="blue-circle"></div>
   <p class="color-text"></p>
+
+
+<div class="size-select" style="width:200px;">
+<select>
+  <option value="tiny">SELECT SIZE</option>
+  <option value="tiny">TINY</option>
+  <option value="small">SMALL</option>
+  <option value="medium">MEDIUM</option>
+  <option value="large">LARGE</option>
+</select>
+</div>
+
+<div class="quantity-select" style="width:200px;">
+<select>
+  <option value="0">SELECT QUANTITY</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+
+</select>
+</div>
+
+<button class="add-to-bag">ADD TO BAG</button>
+
 
 <script src="fulldetails.js"></script>
 </body>
@@ -86,5 +115,37 @@ body {
   font-size: 25;
   font-weight: italic;
 }
+
+
+.size-select {
+  position: relative;
+  top:60%;
+  left:54%;
+  font-family: futura;
+}
+
+.quantity-select {
+  position: relative;
+  top:54%;
+  left:54%;
+  font-family: futura;
+}
+
+.add-to-bag {
+  position: absolute;
+  top:77%;
+  left:54%;
+  font-family: futura;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+
 
 </style>
