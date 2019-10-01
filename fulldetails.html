@@ -1,16 +1,24 @@
 <html>
 <body background="fulldetails.png">
 
-<a href="home.html"><button id="btnhome"></button> 
+<a href="home.html">Home</a> 
 
-<div class="container">
-    <div class="tooltip black_button">
-        <div class="tooltiptext overlay"><a href="#"> BLACKBERRY</a></div>
-    </div>
-</div>
+<div class="black-circle"></div>
+  <p class="color-text"></p>
 
+<div class="red-circle"></div>
+  <p class="color-text"></p>
+
+<div class="orange-circle"></div>
+  <p class="color-text"></p>
+
+  <div class="blue-circle"></div>
+  <p class="color-text"></p>
+
+<script src="fulldetails.js"></script>
 </body>
 </html>
+
 
 <style>
 
@@ -21,66 +29,62 @@ body {
     background-position: center;              /* optional, center the image */
 }
 
-.tooltip {
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
+.black-circle {
+  border-radius: 25px;
   position: absolute;
-  z-index: 1;
+  top:49.6%;
+  left:54%;
+  height: 45px;
+  width: 45px;
+  border-color: black;
+  border-width: 1px;
+  background-color: black;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+.red-circle {
+  border-radius: 25px;
+  position: absolute;
+  top:49.6%;
+  left: 57%;
+  height: 45px;
+  width: 45px;
+  border-color: #D3350F;
+  border-width: 1px;
+  background-color: #D3350F;
 }
 
-#btnhome {  
-    margin-left: 580px;
-    margin-top: 25px;
-    width: 500px;
-    height: 45px;   
-    background: transparent;
-    border: none;
-    color: white;   
-    font-size:14px;
-    font-weight:700;
+.orange-circle {
+  border-radius: 25px;
+  position: absolute;
+  top:49.6%;
+  left: 60%;
+  height: 45px;
+  width: 45px;
+  border-color: #F49B0E;
+  border-width: 1px;
+  background-color: #F49B0E;
 }
 
-.black_button { 
-    margin-left: 70%;
-    margin-top: 50%;
-    width: 500px;
-    height: 45px;   
-    background: transparent;
-    border: none;
-    color: red;   
-    font-size:14px;
-    font-weight:700;
+.blue-circle {
+  border-radius: 25px;
+  position: absolute;
+  top:49.6%;
+  left: 63%;
+  height: 45px;
+  width: 45px;
+  border-color: #55808E;
+  border-width: 1px;
+  background-color: #55808E;
 }
 
-.overlay {
-  top: 50%;
-  left: 53.5%;
-  width: 62px;
-  height: 55px;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.5s ease;
+.color-text {
+  position: absolute;
+  top:47%;
+  left:68%;
+  font-family: futura;
+  font-size: 25;
+  font-weight: italic;
 }
-
-.container:hover .overlay {
-  display: block;
-  background: rgba(0, 0, 0, .3);
-}
-
 
 </style>
