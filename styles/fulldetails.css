@@ -6,6 +6,27 @@ body {
     background-position: center;              /* optional, center the image */
 }
 
+.cart {
+  border-radius: 25px;
+  position: absolute;
+  top:4.8%;
+  left:88.2%;
+  font-family: futura;
+  font-size: 23;
+  font-weight: italic;
+  background-color: white;
+}
+
+.cart-flyout {
+  border-radius: 25px;
+  position: absolute;
+  top:90%;
+  left:54%;
+  font-family: futura;
+  font-size: 17;
+  font-weight: italic;
+}
+
 .black-circle {
   border-radius: 25px;
   position: absolute;

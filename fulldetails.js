@@ -8,6 +8,14 @@ const smallText= document.querySelector(".small-text")
 const mediumText= document.querySelector(".medium-text")
 const largeText= document.querySelector(".large-text")
 const shoppingCart= document.querySelector(".add-to-bag")
+const cartText= document.querySelector(".cart")
+const cartFlyout= document.querySelector(".cart-flyout")
+
+
+document.getElementById("add-to-bag").onclick = function () {
+    cartText.textContent = "(1)";
+    cartFlyout.textContent = "YOU HAVE ADDED THIS ITEM TO YOUR BAG!";
+};
 
 blackCircle.addEventListener("click", (e) => {
 	text.textContent = "BLACKBERRY"
