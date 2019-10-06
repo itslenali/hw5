@@ -1,5 +1,5 @@
 body {
-    background:    url(".../assets/harnesses.png"); 
+    background:    url("assets/harnesses.png"); 
     background-size:     contain;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: top center;              /* optional, center the image */

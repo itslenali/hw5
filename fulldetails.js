@@ -9,10 +9,6 @@ const mediumText= document.querySelector(".medium-text")
 const largeText= document.querySelector(".large-text")
 const shoppingCart= document.querySelector(".add-to-bag")
 
-
-
-
-
 blackCircle.addEventListener("click", (e) => {
 	text.textContent = "BLACKBERRY"
 })

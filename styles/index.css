@@ -1,14 +1,26 @@
 body {
-    background-image:    url("assets/home.png");
+    background-image:    url("assets/index.png");
     background-size:     contain;                      /* <------ */
     background-position: center;              /* optional, center the image */
 
 }
 
-#btnharness {  
-    margin-left: 320px;
+#btnenter {  
+    margin-left: 780px;
     margin-top: 540px;
     width: 100px;
+    height: 45px;   
+    background: transparent;
+    border: none;
+    color: white;   
+    font-size:14px;
+    font-weight:700;
+}
+
+#btnshop {  
+    margin-left: 730px;
+    margin-top: 160px;
+    width: 200px;
     height: 45px;   
     background: transparent;
     border: none;
