@@ -24,8 +24,8 @@ blackCircle.addEventListener("click", (e) => {
 
 redCircle.addEventListener("click", (e) => {
 	text.textContent = "STRAWBERRY"
+	redCircle.style.borderWidth = "thick";
 })
-
 
 orangeCircle.addEventListener("click", (e) => {
 	text.textContent = "FIRE ORANGE"
